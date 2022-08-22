@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ["Jost"]
+        'sans': ["Karla"]
       },
       backgroundImage: {
-        'yosemite': "url('/src/yosemite.png')"
+        'yosemite': "url('/src/clearnight.jpg')"
       },
     },
   },
