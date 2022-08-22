@@ -1,0 +1,14 @@
+{
+  "name": "gnawinganimal.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "author": "gnawinganimal",
+  "license": "MIT",
+  "scripts": {
+    "dev-styles": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
