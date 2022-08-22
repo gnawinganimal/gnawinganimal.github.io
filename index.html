@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/5add46c819.js" crossorigin="anonymous"></script>
 </head>
-<body class="text-white bg-yosemite bg-center bg-cover">
-  <div class="absolute w-full flex grow flex-wrap items-center justify-between p-6">
+<body class="scroll-smooth text-white bg-yosemite bg-center bg-cover bg-fixed">
+  <div class="fixed w-full flex grow flex-wrap items-center justify-between p-6">
     <div class="flex space-x-6">
       <a class="transform transition duration-300 hover:scale-110 hover:text-red-300">
         <i class="fa-brands fa-github"></i>
@@ -23,21 +23,41 @@
       </a>
     </div>
     <div class="flex space-x-6">
-      <a class="transform transition duration-300 hover:scale-110 hover:text-red-300">Home</a>
+      <a class="transform transition duration-300 hover:scale-110 hover:text-red-300" href="#home">Home</a>
       <a class="transform transition duration-300 hover:scale-110 hover:text-red-300">About</a>
-      <a class="transform transition duration-300 hover:scale-110 hover:text-red-300">Experience</a>
+      <a class="transform transition duration-300 hover:scale-110 hover:text-red-300" href="#experience">Experience</a>
       <a class="transform transition duration-300 hover:scale-110 hover:text-red-300">Projects</a>
     </div>
   </div>
   <div>
-    <div class="h-screen flex justify-center items-center">
+    <div class="h-screen flex justify-center items-center" id="home">
       <div class="flex items-center space-x-8">
         <div>
           <img class="w-40 h-40 rounded-full" src="/src/profile.jpg" />
         </div>
         <div>
           <h1 class="text-3xl">Aidan Heller</h1>
-          <a href="https://github.com/gnawinganimal">gnawinganimal@github.com</a>
+          <h3 class="text-xl">Web Developer</h2>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white bg-blue-100 text-black p-16" id="experience">
+      <h1 class="text-3xl underline decoration-red-300">Experience</h1>
+      <div class="grid grid-cols-3 gap-8 pt-6">
+        <div>
+          <h3 class="text-2xl">South Eugene Robotics Team</h3>
+          <p class="text-justify">
+            Here, I mainly used Java, Kotlin, and Gradel to program robots which we build for competitions. I also worked on
+            various side projects and hackathons, using languages like JavaScript, TypeScript and React. After becoming software-team
+            leader, I assumed responsibility for teaching new members how to code.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-2xl">L8S Software</h3>
+          <p class="text-justify">
+            Here, I complete various feature specifications for web-applications on a case-by-case basis. I use Rust for server-side
+            code, TypeScript and React for client-side code, and PostgreSQL for the database.
+          </p>
         </div>
       </div>
     </div>
