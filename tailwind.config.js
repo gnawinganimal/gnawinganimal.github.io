@@ -7,7 +7,7 @@ module.exports = {
         'sans': ["Jost"]
       },
       backgroundImage: {
-        'yosemite': "url('/dist/yosemite.png')"
+        'yosemite': "url('/src/yosemite.png')"
       },
     },
   },
