@@ -1,18 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html", "./node_modules/flowbite/**/*.js"],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
         'sans': ["Karla"]
       },
-      backgroundImage: {
-        'yosemite': "url('/src/clearnight.jpg')"
-      },
     },
   },
-  plugins: [],
-  variants: {
-    width: ["responsive", "hover", "focus"]
-  },
+  plugins: [
+    require('flowbite/plugin'),
+  ],
 }
