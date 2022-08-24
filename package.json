@@ -5,7 +5,7 @@
   "author": "gnawinganimal",
   "license": "MIT",
   "scripts": {
-    "dev-styles": "npx tailwindcss -i ./css/input.css -o ./dist/output.css --watch"
+    "tailwind:dev": "npx tailwindcss -i ./css/input.css -o ./dist/output.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.1.8"
