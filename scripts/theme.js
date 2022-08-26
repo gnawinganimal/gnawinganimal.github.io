@@ -12,7 +12,6 @@ const toggleIcon = () => {
 }
 
 const initTheme = () => {
-    console.log("Init theme...");
     if (userTheme === "dark" || (!userTheme && systemTheme)) {
         document.documentElement.classList.add("dark");
         darkThemeIcon.classList.add("hidden");
@@ -22,7 +21,6 @@ const initTheme = () => {
 }
 
 const toggleTheme = () => {
-    console.log("Toggle theme...");
     if (document.documentElement.classList.contains("dark")) {
         document.documentElement.classList.remove("dark");
         localStorage.setItem("theme", "light");
