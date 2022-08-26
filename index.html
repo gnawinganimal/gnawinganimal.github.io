@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Aidan Heller</title>
-  <link href="./dist/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/5add46c819.js" crossorigin="anonymous"></script>
+  <link href="./dist/output.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,6 +25,10 @@
     <a class="transform transition duration-300 hover:scale-110 hover:text-red-300" href="mailto:unrongeur@proton.me">
       <i class="fa-solid fa-envelope"></i>
     </a>
+    <button id="theme-toggle">
+      <i id="dark-theme-icon" class="fa-solid fa-moon"></i>
+      <i id="light-theme-icon" class="fa-solid fa-sun"></i>
+    </button>
   </div>
   <div class="space-x-6">
     <a href="#home" class="transform transition duration-300 hover:scale-110 hover:text-red-300">Home</a>
@@ -38,13 +42,9 @@
 
 <!-- HOME -->
 <div id="home" class="h-screen flex justify-center items-center">
-  <div class="">
+  <div>
     <h1 class="text-6xl text-bold">Aidan Heller</h1>
     <h3 class="text-6xl text-bold">Software Engineer</h2>
-    <button id="theme-toggle">
-      <i id="light-theme-icon" class="fa-solid fa-sun"></i>
-      <i id="dark-theme-icon" class="fa-solid fa-moon-stars"></i>
-    </button>
   </div>
 </div>
 
@@ -98,5 +98,5 @@
 </body>
 
 </html>
+<script src="/scripts/theme.js"></script>
 <script src="/scripts/smooth_scrolling.js"></script>
-<script src="/scripts/themes.js"></script>
