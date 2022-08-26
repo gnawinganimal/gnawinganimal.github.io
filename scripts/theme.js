@@ -7,18 +7,8 @@ const userTheme = localStorage.getItem("theme");
 const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 const toggleIcon = () => {
-    lightThemeIcon.classList.toggle("display-none");
-    darkThemeIcon.classList.toggle("display-none");
-}
-
-const setIcon = () => {
-    if (document.documentElement.classList.contains("dark")) {
-        lightThemeIcon.classList.remove("hidden");
-        darkThemeIcon.classList.add("hidden");
-    } else {
-        darkThemeIcon.classList.remove("hidden");
-        lightThemeIcon.classList.add("hidden");
-    }
+    lightThemeIcon.classList.toggle("hidden");
+    darkThemeIcon.classList.toggle("hidden");
 }
 
 const initTheme = () => {
@@ -36,12 +26,12 @@ const toggleTheme = () => {
     if (document.documentElement.classList.contains("dark")) {
         document.documentElement.classList.remove("dark");
         localStorage.setItem("theme", "light");
-        setIcon();
+        toggleIcon();
         return;
     }
     document.documentElement.classList.add("dark");
     localStorage.setItem("theme", "dark");
-    setIcon();
+    toggleIcon();
 }
 
 themeToggle.addEventListener("click", () => {
