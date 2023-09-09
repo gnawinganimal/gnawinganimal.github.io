@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Aidan Heller</title>
+  <title>Evelyn Heller</title>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -32,24 +32,24 @@
   </div>
   <div class="space-x-6">
     <a href="#home" class="inline-block transform transition duration-300 hover:scale-110 hover:text-red-300 dark:hover:text-yellow-300">Home</a>
-    <a href="#about" class="inline-block transform transition duration-399 hover:scale-110 hover:text-red-300 dark:hover:text-yellow-300">About</a>
+    <a href="#about" class="inline-block transform transition duration-300 hover:scale-110 hover:text-red-300 dark:hover:text-yellow-300">About</a>
     <a href="#work" class="inline-block transform transition duration-300 hover:scale-110 hover:text-red-300 dark:hover:text-yellow-300">Work</a>
     <a href="/Aidan Heller.pdf" class="inline-block transform transition duration-300 hover:scale-110 hover:text-red-300 dark:hover:text-yellow-300">Resume</a>
   </div>
 </div>
 
 <!-- HOME -->
-<div id="home" class="text-slate-800 dark:text-slate-50 h-screen w-screen flex justify-center items-center bg-yosemite bg-center bg-cover bg-fixed">
+<div id="home" class=" transition duration-300 text-slate-800 dark:text-slate-50 h-screen w-screen flex justify-center items-center bg-yosemite bg-center bg-cover bg-fixed">
   <div>
-    <h1 class="text-6xl text-bold">Aidan Heller</h1>
+    <h1 class="text-6xl text-bold">Evelyn Heller</h1>
     <h3 class="text-6xl text-bold">Software Engineer</h2>
   </div>
 </div>
 
-<div class="w-full bg-slate-50 text-slate-800 dark:bg-slate-800 dark:text-slate-50 transition duration-300 p-20">
+<div class="w-full bg-slate-50 text-slate-800 dark:bg-slate-800 dark:text-slate-50 transition duration-300 p-20 space-y-16">
 
 <!-- ABOUT -->
-<div id="about" class="pb-20">
+<div id="about" class="">
   <h2 class="text-3xl pb-4">About</h2>
   <p>
     Hi, welcome to my webpage! My name is Evelyn, and I'm a software developer located in Corvallis, Oregon. I enjoy
@@ -61,44 +61,48 @@
 <!-- WORK -->
 <div id="work">
   <h2 class="text-3xl pb-4">Work</h2>
-  <div>
-    <div class="p-6">
-      <h3 class="text-xl">Software Lead @ South Eugene Robotics Team</h3>
-      <ul class="list-disc">
-        <li>Programmed autonomous routines to be run during competitions</li>
-        <li>Built a webapp to analize data about the competitions robots</li>
-        <li>Taught incoming team members the basics of coding</li>
-      </ul>
-      <ul class="list-disc">
-        <li>Java</li>
-        <li>Kotlin</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
+  <div id="timeline" class="flex space-x-6">
+    <div id="timeline-buttons" class="flex flex-col flex-none space-y-4">
+      <button id="b0" class="transition duration-300 text-slate-300 hover:text-red-300 dark:hover:text-yellow-300">
+        2016
+        <i class="fa-solid fa-circle"></i>
+      </button>
+      <button id="b1" class="transition duration-300 text-slate-300 hover:text-red-300 dark:hover:text-yellow-300">
+        2019
+        <i class="fa-solid fa-circle"></i>
+      </button>
+      <button id="b2" class="transition duration-300 text-slate-300 hover:text-red-300 dark:hover:text-yellow-300">
+        2021
+        <i class="fa-solid fa-circle"></i>
+      </button>
     </div>
-    <div class="p-6">
-      <h3 class="text-xl">Intern @ OSU Manufacturing Process Control Lab</h3>
-      <ul class="list-disc">
-        <li>Wrote a GUI application that allows for easy configuration of motor motion profiles</li>
-        <li>Use parameters such as max allowed acceleration and velocity to move motors efficiently</li>
-      </ul>
-      <ul class="list-disc">
-        <li>Java</li>
-        <li>Kotlin</li>
-        <li>Arduino</li>
-      </ul>
-    </div>
-    <div class="p-6">
-      <h3 class="text-xl">Freelancer @ L8S Software</h3>
-      <ul class="list-disc">
-        <li>Complete various feature specifications for web-applications on a case-by-case basis</li>
-      </ul>
-      <ul class="list-disc">
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>Rust</li>
-        <li>PostgreSQL</li>
-      </ul>
+    <div id="timeline-content" class="flex-auto">
+      <div>
+        <h3 class="text-xl">South Eugene Robotics Team</h3>
+        <p>
+          In highschool, I was a member of my school's robotics team, where I programmed robots using
+          Java, Kotlin, and Python. Additionally, our team participated in hackathons which made use of
+          other languages such as JavaScript. I also became the <em>Software-Team Leader</em> where I taught
+          incoming team members the fundimentals of programming.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-xl">OSU Manufacturing Process Control Lab</h3>
+        <p>
+          I interned at Oregon State University's <em>MPCL</em>, where I built a GUI
+          application that could edit a motion profile and then run that profile on a makeshift
+          mechanical arm for testing. The app was written in Java, and sent commands to an Arduino
+          chip which then excecuted the profile on a motor controller.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-xl">L8S Software</h3>
+        <p>
+          I worked as a contractor for an independent Corvallis-based software company
+          called <em>L8S Software</em>, where I worked on dynamic web applications. I used
+          TypeScript and React on the client side, and used Rust and PostgreSQL on the server side.
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -107,5 +111,6 @@
 </body>
 
 </html>
+<script src="./scripts/timeline.js"></script>
 <script src="./scripts/theme.js"></script>
 <script src="./scripts/smooth_scrolling.js"></script>

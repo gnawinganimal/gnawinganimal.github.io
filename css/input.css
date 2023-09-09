@@ -5,3 +5,8 @@
 .display-none {
     @apply hidden;
 }
+
+.active {
+    @apply text-red-300;
+    @apply dark:text-yellow-300;
+}
