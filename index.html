@@ -46,58 +46,63 @@
   </div>
 </div>
 
-<div class="w-full bg-slate-50 text-slate-800 dark:bg-slate-800 dark:text-slate-50 transition duration-300 p-20 space-y-16">
+<div class="w-full bg-slate-50 text-slate-800 dark:bg-slate-800 dark:text-slate-50 transition duration-300 py-20 px-6 sm:px-20 space-y-16">
 
 <!-- ABOUT -->
-<div id="about" class="">
+<div id="about" class="max-w-4xl m-auto space-y-6">
   <h2 class="text-3xl pb-4">About</h2>
-  <p>
-    Hi, welcome to my webpage! My name is Evelyn, and I'm a software developer located in Corvallis, Oregon. I enjoy
-    making all sorts of stuff from web applications to command line tools. This website was made by me using static
-    HTML and TailwindCSS.
+  <p class="text-lg">
+    Hi, welcome to my webpage! My name is Evelyn, and I'm a software developer located in Corvallis, Oregon. I enjoy making both static and dynamic experiences
+    on the web, using technologies such as JavaScript, React, and TailwindCSS, as well as using systems languages to create native experiences. Outside of work,
+    I like playing music and playing with my cats.
+  </p>
+  <p class="text-lg">
+    This static website was made using HTML5, JavaScript and TailwindCSS. It was designed mobile-first, so it should be
+    responsive to multiple screen sizes. It includes a timeline widget which displays different experiences I've had as 
+    a software engineer.
   </p>
 </div>
 
 <!-- WORK -->
-<div id="work">
+<div id="work" class="max-w-4xl m-auto space-y-6">
   <h2 class="text-3xl pb-4">Work</h2>
   <div id="timeline" class="flex space-x-6">
     <div id="timeline-buttons" class="flex flex-col flex-none space-y-4">
-      <button id="b0" class="transition duration-300 text-slate-300 hover:text-red-300 dark:hover:text-yellow-300">
+      <button id="b0" class="transition duration-300 text-slate-400 dark:text-slate-300 hover:text-red-300 dark:hover:text-yellow-300">
         2016
         <i class="fa-solid fa-circle"></i>
       </button>
-      <button id="b1" class="transition duration-300 text-slate-300 hover:text-red-300 dark:hover:text-yellow-300">
+      <button id="b1" class="transition duration-300 text-slate-400 dark:text-slate-300 hover:text-red-300 dark:hover:text-yellow-300">
         2019
         <i class="fa-solid fa-circle"></i>
       </button>
-      <button id="b2" class="transition duration-300 text-slate-300 hover:text-red-300 dark:hover:text-yellow-300">
+      <button id="b2" class="transition duration-300 text-slate-400 dark:text-slate-300 hover:text-red-300 dark:hover:text-yellow-300">
         2021
         <i class="fa-solid fa-circle"></i>
       </button>
     </div>
     <div id="timeline-content" class="flex-auto">
-      <div>
+      <div class="space-y-4">
         <h3 class="text-xl">South Eugene Robotics Team</h3>
-        <p>
+        <p class="text-lg">
           In highschool, I was a member of my school's robotics team, where I programmed robots using
           Java, Kotlin, and Python. Additionally, our team participated in hackathons which made use of
           other languages such as JavaScript. I also became the <em>Software-Team Leader</em> where I taught
           incoming team members the fundimentals of programming.
         </p>
       </div>
-      <div>
+      <div class="space-y-4">
         <h3 class="text-xl">OSU Manufacturing Process Control Lab</h3>
-        <p>
+        <p class="text-lg">
           I interned at Oregon State University's <em>MPCL</em>, where I built a GUI
           application that could edit a motion profile and then run that profile on a makeshift
           mechanical arm for testing. The app was written in Java, and sent commands to an Arduino
           chip which then excecuted the profile on a motor controller.
         </p>
       </div>
-      <div>
+      <div class="space-y-4">
         <h3 class="text-xl">L8S Software</h3>
-        <p>
+        <p class="text-lg">
           I worked as a contractor for an independent Corvallis-based software company
           called <em>L8S Software</em>, where I worked on dynamic web applications. I used
           TypeScript and React on the client side, and used Rust and PostgreSQL on the server side.
