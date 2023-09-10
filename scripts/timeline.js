@@ -7,13 +7,11 @@ function update(current) {
     for (let i = 0; i < content.childElementCount; i++) {
         if (i === current) {
             content.children[i].classList.remove("display-none");
-            buttons.children[i].classList.add("text-red-300");
-            buttons.children[i].classList.add("dark:text-yellow-300");
+            buttons.children[i].classList.add("active");
 
         } else {
             content.children[i].classList.add("display-none");
-            buttons.children[i].classList.remove("text-red-300");
-            buttons.children[i].classList.remove("dark:text-yellow-300");
+            buttons.children[i].classList.remove("active");
         }
     }
 }
