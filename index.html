@@ -39,10 +39,10 @@
 </div>
 
 <!-- HOME -->
-<div id="home" class=" transition duration-300 text-slate-800 dark:text-slate-50 h-screen w-screen flex justify-center items-center bg-yosemite bg-center bg-cover bg-fixed">
+<div id="home" class=" transition duration-300 text-slate-800 dark:text-slate-50 h-screen w-screen flex justify-center content-center items-center text-center bg-yosemite bg-center bg-cover bg-fixed">
   <div>
     <h1 class="text-6xl text-bold">Evelyn Heller</h1>
-    <h3 class="text-6xl text-bold">Software Engineer</h2>
+    <h3 class="text-5xl text-bold">Software Developer</h2>
   </div>
 </div>
 
@@ -50,22 +50,20 @@
 
 <!-- ABOUT -->
 <div id="about" class="max-w-4xl m-auto space-y-6">
-  <h2 class="text-3xl pb-4">About</h2>
-  <p class="text-lg">
-    Hi, welcome to my webpage! My name is Evelyn, and I'm a software developer located in Corvallis, Oregon. I enjoy making both static and dynamic experiences
-    on the web, using technologies such as JavaScript, React, and TailwindCSS, as well as using systems languages to create native experiences. Outside of work,
-    I like playing music and playing with my cats.
-  </p>
-  <p class="text-lg">
-    This static website was made using HTML5, JavaScript and TailwindCSS. It was designed mobile-first, so it should be
-    responsive to multiple screen sizes. It includes a timeline widget which displays different experiences I've had as 
-    a software engineer.
-  </p>
+  <h2 class="text-3xl pb-4 text-center sm:text-left">About</h2>
+  <div class="flex space-x-12">
+    <p class="text-lg flex-auto text-justify">
+      Hi, welcome to my webpage! My name is Evelyn, and I'm a software developer located in Corvallis, Oregon. Currently, I'm a student at Oregon State University
+      and am working towards earning a batchelor's in Computer Science. I love creating static web pages web applications, as well as developing desktop applications
+      and games. When I'm not working, I enjoy playing the keyboard and playing with my cat.
+    </p>
+
+  </div>
 </div>
 
 <!-- WORK -->
 <div id="work" class="max-w-4xl m-auto space-y-6">
-  <h2 class="text-3xl pb-4">Work</h2>
+  <h2 class="text-3xl pb-4 text-center sm:text-left">Work</h2>
   <div id="timeline" class="flex space-x-6">
     <div id="timeline-buttons" class="flex flex-col flex-none space-y-4">
       <button id="b0" class="transition duration-300 text-slate-400 hover:text-red-300 dark:hover:text-yellow-300">
@@ -84,7 +82,7 @@
     <div id="timeline-content" class="flex-auto">
       <div class="space-y-4">
         <h3 class="text-xl">South Eugene Robotics Team</h3>
-        <p class="text-lg">
+        <p class="text-lg text-justify">
           In highschool, I was a member of my school's robotics team, where I programmed robots using
           Java, Kotlin, and Python. Additionally, our team participated in hackathons which made use of
           other languages such as JavaScript. I also became the <em>Software-Team Leader</em> where I taught
@@ -93,7 +91,7 @@
       </div>
       <div class="space-y-4">
         <h3 class="text-xl">OSU Manufacturing Process Control Lab</h3>
-        <p class="text-lg">
+        <p class="text-lg text-justify">
           I interned at Oregon State University's <em>MPCL</em>, where I built a GUI
           application that could edit a motion profile and then run that profile on a makeshift
           mechanical arm for testing. The app was written in Java, and sent commands to an Arduino
@@ -102,10 +100,10 @@
       </div>
       <div class="space-y-4">
         <h3 class="text-xl">L8S Software</h3>
-        <p class="text-lg">
+        <p class="text-lg text-justify">
           I worked as a contractor for an independent Corvallis-based software company
-          called <em>L8S Software</em>, where I worked on dynamic web applications. I used
-          TypeScript and React on the client side, and used Rust and PostgreSQL on the server side.
+          called <em>L8S Software</em>, where I worked on a dynamic web application to manage inventory for a client.
+          I used TypeScript and React on the client side, and used Rust and PostgreSQL on the server side.
         </p>
       </div>
     </div>
